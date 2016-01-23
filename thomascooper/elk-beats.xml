@@ -31,7 +31,28 @@ Beats: 1.0.1
   </Environment>
   <Networking>
     <Mode>bridge</Mode>
-    <Publish/>
+    <Publish>
+      <Port>
+        <HostPort>5000</HostPort>
+        <ContainerPort>5000</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>5044</HostPort>
+        <ContainerPort>5044</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>5061</HostPort>
+        <ContainerPort>5061</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>9200</HostPort>
+        <ContainerPort>9200</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
   </Networking>
   <Data>
     <Volume>
