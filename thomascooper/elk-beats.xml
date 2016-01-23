@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Beta>False</Beta>
+  <Category>Log Analysis</Category>
+  <Date>2016-01-23</Date>
+  <Changes>
+    [center][img width='300px' src='https://rafaelmt.net/wp-content/uploads/2015/08/logos1.png'][/center]
+ 
+[center][font size=4]ELK+Beats Change Log[/font][/center]
+  
+  [b]2016.01.23:[/b] Added beats
+  [b]2016.01.23:[/b] Initial build
+  </Changes>
+  <Name>ELK-beats</Name>
+  <Support>http://lime-technology.com/forum/index.php?topic=a</Support>
+  <Description>
+Full ELK stack, with the Beats platform installed for docker host monitoring. This image has been validated to work with unRaid as a host server logging facility, but it is fully capable of being used as a self-contained single ELK box for any deployment environment.
+
+Versions:
+Elasticsearch: 2.2.1
+Logstash: 2.2.1
+Kibana: 4.3.1
+Beats: 1.0.1
+  </Description>
+  <Project>https://www.elastic.co/</Project>
+  <Registry>https://hub.docker.com/r/thomascooper/elk-beats/</Registry>
+  <Repository>thomascooper/elk-beats</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>true</Privileged>
+  <Environment>
+  </Environment>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/cache/appdata/elk-beats/</HostDir>
+      <ContainerDir>/var/lib/elasticsearch</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+<WebUI>http://[IP]:[PORT:5601]/</WebUI>
+  <Banner>https://rafaelmt.net/wp-content/uploads/2015/08/logos1.png</Banner>
+  <Icon>https://www.elastic.co/static/img/elastic-logo-200.png</Icon>
+  <ExtraParams></ExtraParams>
+</Container>
