@@ -43,8 +43,8 @@ Beats: 1.0.1
         <Protocol>tcp</Protocol>
       </Port>
       <Port>
-        <HostPort>5061</HostPort>
-        <ContainerPort>5061</ContainerPort>
+        <HostPort>5601</HostPort>
+        <ContainerPort>5601</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
       <Port>
